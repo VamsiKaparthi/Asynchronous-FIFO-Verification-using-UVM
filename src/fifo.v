@@ -47,10 +47,7 @@ module FIFO #(parameter DSIZE = 8,
         .raddr(raddr),
         .wclk_en(winc),
         .wfull(wfull),
-        .wclk(wclk),
-                                .rclk(rclk),
-                                .rclk_en(rinc),
-                                .rempty(rempty)
+        .wclk(wclk)
     );
 
     rptr_empty #(ASIZE) rptr_empty(         // Read pointer and empty signal handling
