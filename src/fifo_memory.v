@@ -4,7 +4,6 @@ module FIFO_memory #(parameter DATA_SIZE = 8,
     input [DATA_SIZE-1:0] wdata,         // Input data - data to be written
     input [ADDR_SIZE-1:0] waddr, raddr,  // Write and read address
     input wclk_en, wfull, wclk,          // Write clock enable, write full, write clock
-    input rclk_en, rempty, rclk
     );
 
     localparam DEPTH = 1<<ADDR_SIZE;     // Depth of the FIFO memory
