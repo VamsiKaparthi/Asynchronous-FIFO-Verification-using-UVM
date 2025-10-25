@@ -6,18 +6,32 @@ interface inf(input bit rclk, input bit rrst_n, input bit wclk, input bit wrst_n
         logic wfull, rempty;
         logic [DSIZE - 1 : 0] rdata;
 
-        clocking write_cb @(posedge wclk);
-                output winc, wrst_n, wdata;
-                input wfull;
+        clocking write_drv_cb @(posedge wclk);
+                output winc, wdata;
         endclocking
 
-        clocking read_cb @(posedge rclk);
-                input rinc, rrst_n;
-                input rempty, rdata;
+        clocking write_mon_cb @(posedge wclk);
+                input winc, wdata, wfull;
         endclocking
 
+        clocking read_drv_cb @(posedge rclk);
+                output rinc;
+        endclocking
+
+        clocking read_mon_cb @(posedge rclk);
+                        input rinc, rempty, rdata;
+        endclocking
+
+        clocking wrst_n_cb @(posedge wclk);
+    input wrst_n;
+  endclocking
+
+  clocking rrst_n_cb @(posedge rclk);
+    input rrst_n;
+  endclocking
 /****Assertions****/
 //Write clock toggling
+
   property p1;
     @(posedge wclk) wclk != $past(1, wclk);
   endproperty
@@ -73,4 +87,3 @@ interface inf(input bit rclk, input bit rrst_n, input bit wclk, input bit wrst_n
   end
 
 endinterface
-
