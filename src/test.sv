@@ -1,38 +1,55 @@
-class test extends uvm_test;
-        `uvm_component_utils(test);
-        env e1;
-        v_seq vsq;
+class seq_wr_test extends uvm_test;
+  `uvm_component_utils(seq_wr_test)
+  env e1;
+  write_sequence write_seq;
+  read_sequence read_seq;
 
-        function new(string name = "test", uvm_component parent = null);
-                super.new(name, parent);
-        endfunction
+  function new(string name = "_sequential_wr_test",uvm_component parent=null);
+    super.new(name,parent);
+  endfunction
 
-        function void build_phase(uvm_phase phase);
-                super.build_phase(phase);
-                e1 = env::type_id::create("env", this);
-                vsq = v_seq::type_id::create("vsq");
-        endfunction
+  function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    e1 = env::type_id::create("env", this);
+  endfunction
 
-        task run_phase(uvm_phase phase);
-                phase.raise_objection(this);
-                vsq.start(e1.vsqr);
-                phase.drop_objection(this);
-        endtask
+  task run_phase(uvm_phase phase);
+    phase.raise_objection(this);
+    write_seq = write_sequence::type_id::create("write_seq");
+    read_seq = read_sequence::type_id::create("read_seq");
+    fork
+      write_seq.start(e1.w_agnt.sqr);
+      read_seq.start(e1.r_agnt.sqr);
+    join
+    phase.drop_objection(this);
+  endtask
 endclass
 
-class write_test extends test;
-        `uvm_component_utils(write_test);
-        wr_seq wseq;
-        function new(string name = "", uvm_component parent = null);
-                super.new(name, parent);
-        endfunction
-        function void build_phase(uvm_phase phase);
-                super.build_phase(phase);
-                wseq = wr_seq::type_id::create("wseq");
-        endfunction
-        task run_phase(uvm_phase phase);
-                phase.raise_objection(this);
-                wseq.start(e1.vsqr.wr_sqr);
-                phase.drop_objection(this);
-        endtask
+
+class par_wr_test extends uvm_test;
+  `uvm_component_utils(par_wr_test)
+  env e1;
+  p_write_sequence p_write_seq;
+  p_read_sequence p_read_seq;
+
+  function new(string name = "parallel_wr_test",uvm_component parent=null);
+    super.new(name,parent);
+  endfunction
+
+  function void build_phase(uvm_phase phase);
+    super.build_phase(phase);
+    e1 = env::type_id::create("env", this);
+  endfunction
+
+
+  task run_phase(uvm_phase phase);
+    phase.raise_objection(this);
+    p_write_seq = p_write_sequence::type_id::create("p_write_seq");
+    p_read_seq = p_read_sequence::type_id::create("p_read_seq");
+    fork
+      p_write_seq.start(e1.w_agnt.sqr);
+      p_read_seq.start(e1.r_agnt.sqr);
+    join
+    phase.drop_objection(this);
+  endtask
 endclass
