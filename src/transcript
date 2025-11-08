@@ -1,0 +1,922 @@
+# vsim -c top 
+# Start time: 15:48:49 on Nov 08,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.inf(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test seq_wr_test...
+# UVM_INFO sequence.sv(15) @ 10: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [10] Write Transaction 0: winc=1, wdata=254
+# UVM_INFO wr_driver.sv(19) @ 10: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 254
+# ** Info: Write Reset Pass
+#    Time: 10 ns Started: 10 ns  Scope: top.vif File: interface.sv Line: 72
+# ** Info: Write Clock Toggling Pass
+#    Time: 10 ns Started: 10 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO sequence.sv(41) @ 20: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [20] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 20: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Reset Pass
+#    Time: 20 ns Started: 20 ns  Scope: top.vif File: interface.sv Line: 61
+# ** Info: Read Clock Toggling Pass
+#    Time: 20 ns Started: 20 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 30: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 30: uvm_test_top.env.scb [scoreboard] WRITE : addr = 0, data = 254, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254}
+# UVM_INFO scoreboard.sv(64) @ 30: uvm_test_top.env.scb [scoreboard] write_count = 1, wbin_next = 1, wgray_next = 1
+# UVM_INFO scoreboard.sv(76) @ 30: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 0, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 30: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [30] Write Transaction 1: winc=1, wdata=116
+# UVM_INFO wr_driver.sv(19) @ 30: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 116
+# ** Info: Valid Write Inputs Pass
+#    Time: 30 ns Started: 30 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 30 ns Started: 30 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 50: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 50: uvm_test_top.env.scb [scoreboard] WRITE : addr = 1, data = 116, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 50: uvm_test_top.env.scb [scoreboard] write_count = 2, wbin_next = 2, wgray_next = 3
+# UVM_INFO scoreboard.sv(76) @ 50: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 1, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 50: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [50] Write Transaction 2: winc=1, wdata=18
+# UVM_INFO wr_driver.sv(19) @ 50: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 18
+# ** Info: Valid Write Inputs Pass
+#    Time: 50 ns Started: 50 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 50 ns Started: 50 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 60: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(125) @ 60: uvm_test_top.env.scb [scoreboard] REMPTY Mismatch, Expected = 0, Actual = 1, rbin = 0, rq2_wptr = 0
+# UVM_INFO sequence.sv(41) @ 60: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [60] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 60: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 60 ns Started: 60 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 70: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 70: uvm_test_top.env.scb [scoreboard] WRITE : addr = 2, data = 18, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 70: uvm_test_top.env.scb [scoreboard] write_count = 3, wbin_next = 3, wgray_next = 2
+# UVM_INFO scoreboard.sv(76) @ 70: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 2, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 70: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [70] Write Transaction 3: winc=1, wdata=216
+# UVM_INFO wr_driver.sv(19) @ 70: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 216
+# ** Info: Valid Write Inputs Pass
+#    Time: 70 ns Started: 70 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 70 ns Started: 70 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 90: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 90: uvm_test_top.env.scb [scoreboard] WRITE : addr = 3, data = 216, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 90: uvm_test_top.env.scb [scoreboard] write_count = 4, wbin_next = 4, wgray_next = 6
+# UVM_INFO scoreboard.sv(76) @ 90: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 3, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 90: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [90] Write Transaction 4: winc=1, wdata=84
+# UVM_INFO wr_driver.sv(19) @ 90: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 84
+# ** Info: Valid Write Inputs Pass
+#    Time: 90 ns Started: 90 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 90 ns Started: 90 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 100: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 100: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 100: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [100] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 100: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 100 ns Started: 100 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 110: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 110: uvm_test_top.env.scb [scoreboard] WRITE : addr = 4, data = 84, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 110: uvm_test_top.env.scb [scoreboard] write_count = 5, wbin_next = 5, wgray_next = 7
+# UVM_INFO scoreboard.sv(76) @ 110: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 4, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 110: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [110] Write Transaction 5: winc=1, wdata=56
+# UVM_INFO wr_driver.sv(19) @ 110: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 56
+# ** Info: Valid Write Inputs Pass
+#    Time: 110 ns Started: 110 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 110 ns Started: 110 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 130: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 130: uvm_test_top.env.scb [scoreboard] WRITE : addr = 5, data = 56, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 130: uvm_test_top.env.scb [scoreboard] write_count = 6, wbin_next = 6, wgray_next = 5
+# UVM_INFO scoreboard.sv(76) @ 130: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 5, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 130: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [130] Write Transaction 6: winc=1, wdata=171
+# UVM_INFO wr_driver.sv(19) @ 130: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 171
+# ** Info: Valid Write Inputs Pass
+#    Time: 130 ns Started: 130 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 130 ns Started: 130 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 140: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 140: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 140: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [140] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 140: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 140 ns Started: 140 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 150: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 150: uvm_test_top.env.scb [scoreboard] WRITE : addr = 6, data = 171, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 0, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 150: uvm_test_top.env.scb [scoreboard] write_count = 7, wbin_next = 7, wgray_next = 4
+# UVM_INFO scoreboard.sv(76) @ 150: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 6, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 150: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [150] Write Transaction 7: winc=1, wdata=112
+# UVM_INFO wr_driver.sv(19) @ 150: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 112
+# ** Info: Valid Write Inputs Pass
+#    Time: 150 ns Started: 150 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 150 ns Started: 150 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 170: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 170: uvm_test_top.env.scb [scoreboard] WRITE : addr = 7, data = 112, memory  = '{0, 0, 0, 0, 0, 0, 0, 0, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 170: uvm_test_top.env.scb [scoreboard] write_count = 8, wbin_next = 8, wgray_next = 12
+# UVM_INFO scoreboard.sv(76) @ 170: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 7, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 170: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [170] Write Transaction 8: winc=1, wdata=58
+# UVM_INFO wr_driver.sv(19) @ 170: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 58
+# ** Info: Valid Write Inputs Pass
+#    Time: 170 ns Started: 170 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 170 ns Started: 170 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 180: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 180: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 180: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [180] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 180: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 180 ns Started: 180 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 190: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 190: uvm_test_top.env.scb [scoreboard] WRITE : addr = 8, data = 58, memory  = '{0, 0, 0, 0, 0, 0, 0, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 190: uvm_test_top.env.scb [scoreboard] write_count = 9, wbin_next = 9, wgray_next = 13
+# UVM_INFO scoreboard.sv(76) @ 190: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 8, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 190: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [190] Write Transaction 9: winc=1, wdata=17
+# UVM_INFO wr_driver.sv(19) @ 190: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 17
+# ** Info: Valid Write Inputs Pass
+#    Time: 190 ns Started: 190 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 190 ns Started: 190 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 210: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 210: uvm_test_top.env.scb [scoreboard] WRITE : addr = 9, data = 17, memory  = '{0, 0, 0, 0, 0, 0, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 210: uvm_test_top.env.scb [scoreboard] write_count = 10, wbin_next = 10, wgray_next = 15
+# UVM_INFO scoreboard.sv(76) @ 210: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 9, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 210: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [210] Write Transaction 10: winc=1, wdata=215
+# UVM_INFO wr_driver.sv(19) @ 210: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 215
+# ** Info: Valid Write Inputs Pass
+#    Time: 210 ns Started: 210 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 210 ns Started: 210 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 220: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 220: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 220: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [220] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 220: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 220 ns Started: 220 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 230: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 230: uvm_test_top.env.scb [scoreboard] WRITE : addr = 10, data = 215, memory  = '{0, 0, 0, 0, 0, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 230: uvm_test_top.env.scb [scoreboard] write_count = 11, wbin_next = 11, wgray_next = 14
+# UVM_INFO scoreboard.sv(76) @ 230: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 10, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 230: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [230] Write Transaction 11: winc=1, wdata=138
+# UVM_INFO wr_driver.sv(19) @ 230: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 138
+# ** Info: Valid Write Inputs Pass
+#    Time: 230 ns Started: 230 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 230 ns Started: 230 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 250: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 250: uvm_test_top.env.scb [scoreboard] WRITE : addr = 11, data = 138, memory  = '{0, 0, 0, 0, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 250: uvm_test_top.env.scb [scoreboard] write_count = 12, wbin_next = 12, wgray_next = 10
+# UVM_INFO scoreboard.sv(76) @ 250: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 11, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 250: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [250] Write Transaction 12: winc=1, wdata=179
+# UVM_INFO wr_driver.sv(19) @ 250: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 179
+# ** Info: Valid Write Inputs Pass
+#    Time: 250 ns Started: 250 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 250 ns Started: 250 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 260: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 260: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 260: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [260] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 260: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 260 ns Started: 260 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 270: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 270: uvm_test_top.env.scb [scoreboard] WRITE : addr = 12, data = 179, memory  = '{0, 0, 0, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 270: uvm_test_top.env.scb [scoreboard] write_count = 13, wbin_next = 13, wgray_next = 11
+# UVM_INFO scoreboard.sv(76) @ 270: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 12, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 270: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [270] Write Transaction 13: winc=1, wdata=138
+# UVM_INFO wr_driver.sv(19) @ 270: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 138
+# ** Info: Valid Write Inputs Pass
+#    Time: 270 ns Started: 270 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 270 ns Started: 270 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 290: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 290: uvm_test_top.env.scb [scoreboard] WRITE : addr = 13, data = 138, memory  = '{0, 0, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 290: uvm_test_top.env.scb [scoreboard] write_count = 14, wbin_next = 14, wgray_next = 9
+# UVM_INFO scoreboard.sv(76) @ 290: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 13, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 290: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [290] Write Transaction 14: winc=1, wdata=53
+# UVM_INFO wr_driver.sv(19) @ 290: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 53
+# ** Info: Valid Write Inputs Pass
+#    Time: 290 ns Started: 290 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 290 ns Started: 290 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 300: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 300: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 300: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [300] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 300: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 300 ns Started: 300 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 310: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 0
+# UVM_INFO scoreboard.sv(60) @ 310: uvm_test_top.env.scb [scoreboard] WRITE : addr = 14, data = 53, memory  = '{0, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 310: uvm_test_top.env.scb [scoreboard] write_count = 15, wbin_next = 15, wgray_next = 8
+# UVM_INFO scoreboard.sv(76) @ 310: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 14, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 310: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [310] Write Transaction 15: winc=1, wdata=140
+# UVM_INFO wr_driver.sv(19) @ 310: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 140
+# ** Info: Valid Write Inputs Pass
+#    Time: 310 ns Started: 310 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 310 ns Started: 310 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 330: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 1
+# UVM_INFO scoreboard.sv(60) @ 330: uvm_test_top.env.scb [scoreboard] WRITE : addr = 15, data = 140, memory  = '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(64) @ 330: uvm_test_top.env.scb [scoreboard] write_count = 16, wbin_next = 16, wgray_next = 24
+# UVM_INFO scoreboard.sv(76) @ 330: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 15, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 330: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [330] Write Transaction 16: winc=1, wdata=84
+# UVM_INFO wr_driver.sv(19) @ 330: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 84
+# ** Info: Valid Write Inputs Pass
+#    Time: 330 ns Started: 330 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 330 ns Started: 330 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 340: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 340: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 340: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [340] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 340: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 340 ns Started: 340 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 350: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 1
+# UVM_INFO scoreboard.sv(68) @ 350: uvm_test_top.env.scb [scoreboard] FIFO FULL, memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(76) @ 350: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 350: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [350] Write Transaction 17: winc=1, wdata=232
+# UVM_INFO wr_driver.sv(19) @ 350: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 232
+# ** Info: Valid Write Inputs Pass
+#    Time: 350 ns Started: 350 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 350 ns Started: 350 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 370: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 1
+# UVM_INFO scoreboard.sv(68) @ 370: uvm_test_top.env.scb [scoreboard] FIFO FULL, memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(76) @ 370: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 370: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [370] Write Transaction 18: winc=1, wdata=13
+# UVM_INFO wr_driver.sv(19) @ 370: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 13
+# ** Info: Valid Write Inputs Pass
+#    Time: 370 ns Started: 370 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 370 ns Started: 370 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 380: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 380: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 380: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [380] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 380: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 380 ns Started: 380 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 390: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 1
+# UVM_INFO scoreboard.sv(68) @ 390: uvm_test_top.env.scb [scoreboard] FIFO FULL, memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(76) @ 390: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# UVM_INFO sequence.sv(15) @ 390: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [390] Write Transaction 19: winc=1, wdata=232
+# UVM_INFO wr_driver.sv(19) @ 390: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 1 | wdata = 232
+# ** Info: Valid Write Inputs Pass
+#    Time: 390 ns Started: 390 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 390 ns Started: 390 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 410: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 1 | wfull = 1
+# UVM_INFO scoreboard.sv(68) @ 410: uvm_test_top.env.scb [scoreboard] FIFO FULL, memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(76) @ 410: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# UVM_INFO sequence.sv(22) @ 410: uvm_test_top.env.w_agnt.sqr@@write_seq [write_sequence] [410] Write Transaction 20: winc=0, wdata=241
+# UVM_INFO wr_driver.sv(19) @ 410: uvm_test_top.env.w_agnt.w_drv [wr_driver] winc = 0 | wdata = 241
+# ** Info: Valid Write Inputs Pass
+#    Time: 410 ns Started: 410 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 410 ns Started: 410 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 420: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 420: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 420: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [420] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 420: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 420 ns Started: 420 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 430: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 430: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 430 ns Started: 430 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 430 ns Started: 430 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 450: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 450: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 450 ns Started: 450 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 450 ns Started: 450 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 460: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 460: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 460: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [460] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 460: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 460 ns Started: 460 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 470: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 470: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 470 ns Started: 470 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 470 ns Started: 470 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 490: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 490: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 490 ns Started: 490 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 490 ns Started: 490 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 500: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 500: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 500: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [500] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 500: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 500 ns Started: 500 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 510: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 510: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 510 ns Started: 510 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 510 ns Started: 510 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 530: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 530: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 530 ns Started: 530 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 530 ns Started: 530 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 540: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 540: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 540: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [540] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 540: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 540 ns Started: 540 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 550: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 550: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 550 ns Started: 550 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 550 ns Started: 550 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 570: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 570: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 570 ns Started: 570 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 570 ns Started: 570 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 580: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 580: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 580: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [580] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 580: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 580 ns Started: 580 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 590: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 590: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 590 ns Started: 590 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 590 ns Started: 590 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 610: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 610: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 610 ns Started: 610 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 610 ns Started: 610 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 620: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 620: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 620: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [620] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 620: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 620 ns Started: 620 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 630: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 630: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 630 ns Started: 630 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 630 ns Started: 630 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 650: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 650: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 650 ns Started: 650 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 650 ns Started: 650 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 660: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 660: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 660: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [660] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 660: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 660 ns Started: 660 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 670: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 670: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 670 ns Started: 670 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 670 ns Started: 670 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 690: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 690: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 690 ns Started: 690 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 690 ns Started: 690 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 700: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 700: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 700: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [700] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 700: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 700 ns Started: 700 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 710: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 710: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 710 ns Started: 710 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 710 ns Started: 710 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 730: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 730: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 730 ns Started: 730 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 730 ns Started: 730 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 740: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 740: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 740: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [740] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 740: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 740 ns Started: 740 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 750: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 750: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 750 ns Started: 750 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 750 ns Started: 750 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 770: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 770: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 770 ns Started: 770 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 770 ns Started: 770 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 780: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 780: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(41) @ 780: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [780] Read Transaction 0: rinc=0
+# UVM_INFO rd_driver.sv(18) @ 780: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 0
+# ** Info: Read Clock Toggling Pass
+#    Time: 780 ns Started: 780 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 790: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 790: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 790 ns Started: 790 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 790 ns Started: 790 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 810: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 810: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 810 ns Started: 810 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 810 ns Started: 810 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 820: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 254
+# UVM_INFO scoreboard.sv(129) @ 820: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 820: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [820] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 820: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 820 ns Started: 820 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 830: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 830: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 830 ns Started: 830 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 830 ns Started: 830 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 850: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 850: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 850 ns Started: 850 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 850 ns Started: 850 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 860: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 116
+# UVM_INFO scoreboard.sv(102) @ 860: uvm_test_top.env.scb [scoreboard] READ: addr=0, expected=0, actual=254, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 860: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 860: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 860: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [860] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 860: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 860 ns Started: 860 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 870: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 870: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 870 ns Started: 870 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 870 ns Started: 870 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 890: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 1
+# UVM_INFO scoreboard.sv(76) @ 890: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 0
+# ** Info: Valid Write Inputs Pass
+#    Time: 890 ns Started: 890 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 890 ns Started: 890 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 900: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 18
+# UVM_INFO scoreboard.sv(102) @ 900: uvm_test_top.env.scb [scoreboard] READ: addr=0, expected=254, actual=116, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 900: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 900: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 900: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [900] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 900: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 900 ns Started: 900 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 910: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 910: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 1, Actual = 1, wbin = 16, wq2_rptr = 1
+# ** Info: Valid Write Inputs Pass
+#    Time: 910 ns Started: 910 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 910 ns Started: 910 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 930: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 930: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 1
+# ** Info: Valid Write Inputs Pass
+#    Time: 930 ns Started: 930 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 930 ns Started: 930 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 940: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 216
+# UVM_INFO scoreboard.sv(102) @ 940: uvm_test_top.env.scb [scoreboard] READ: addr=1, expected=116, actual=18, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 940: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 940: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 940: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [940] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 940: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 940 ns Started: 940 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 950: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 950: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 3
+# ** Info: Valid Write Inputs Pass
+#    Time: 950 ns Started: 950 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 950 ns Started: 950 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 970: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 970: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 3
+# ** Info: Valid Write Inputs Pass
+#    Time: 970 ns Started: 970 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 970 ns Started: 970 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 980: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 84
+# UVM_INFO scoreboard.sv(102) @ 980: uvm_test_top.env.scb [scoreboard] READ: addr=2, expected=18, actual=216, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 980: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 980: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 980: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [980] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 980: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 980 ns Started: 980 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 990: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 990: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 2
+# ** Info: Valid Write Inputs Pass
+#    Time: 990 ns Started: 990 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 990 ns Started: 990 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1010: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1010: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 2
+# ** Info: Valid Write Inputs Pass
+#    Time: 1010 ns Started: 1010 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1010 ns Started: 1010 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1020: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 56
+# UVM_INFO scoreboard.sv(102) @ 1020: uvm_test_top.env.scb [scoreboard] READ: addr=3, expected=216, actual=84, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1020: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1020: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1020: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1020] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1020: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1020 ns Started: 1020 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1030: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1030: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 6
+# ** Info: Valid Write Inputs Pass
+#    Time: 1030 ns Started: 1030 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1030 ns Started: 1030 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1050: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1050: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 6
+# ** Info: Valid Write Inputs Pass
+#    Time: 1050 ns Started: 1050 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1050 ns Started: 1050 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1060: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 171
+# UVM_INFO scoreboard.sv(102) @ 1060: uvm_test_top.env.scb [scoreboard] READ: addr=4, expected=84, actual=56, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1060: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1060: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1060: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1060] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1060: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1060 ns Started: 1060 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1070: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1070: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 7
+# ** Info: Valid Write Inputs Pass
+#    Time: 1070 ns Started: 1070 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1070 ns Started: 1070 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1090: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1090: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 7
+# ** Info: Valid Write Inputs Pass
+#    Time: 1090 ns Started: 1090 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1090 ns Started: 1090 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1100: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 112
+# UVM_INFO scoreboard.sv(102) @ 1100: uvm_test_top.env.scb [scoreboard] READ: addr=5, expected=56, actual=171, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1100: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1100: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1100: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1100] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1100: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1100 ns Started: 1100 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1110: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1110: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 5
+# ** Info: Valid Write Inputs Pass
+#    Time: 1110 ns Started: 1110 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1110 ns Started: 1110 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1130: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1130: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 5
+# ** Info: Valid Write Inputs Pass
+#    Time: 1130 ns Started: 1130 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1130 ns Started: 1130 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1140: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 58
+# UVM_INFO scoreboard.sv(102) @ 1140: uvm_test_top.env.scb [scoreboard] READ: addr=6, expected=171, actual=112, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1140: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1140: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1140: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1140] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1140: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1140 ns Started: 1140 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1150: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1150: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 4
+# ** Info: Valid Write Inputs Pass
+#    Time: 1150 ns Started: 1150 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1150 ns Started: 1150 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1170: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1170: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 4
+# ** Info: Valid Write Inputs Pass
+#    Time: 1170 ns Started: 1170 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1170 ns Started: 1170 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1180: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 17
+# UVM_INFO scoreboard.sv(102) @ 1180: uvm_test_top.env.scb [scoreboard] READ: addr=7, expected=112, actual=58, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1180: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1180: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1180: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1180] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1180: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1180 ns Started: 1180 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1190: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1190: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 12
+# ** Info: Valid Write Inputs Pass
+#    Time: 1190 ns Started: 1190 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1190 ns Started: 1190 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1210: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1210: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 12
+# ** Info: Valid Write Inputs Pass
+#    Time: 1210 ns Started: 1210 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1210 ns Started: 1210 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1220: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 215
+# UVM_INFO scoreboard.sv(102) @ 1220: uvm_test_top.env.scb [scoreboard] READ: addr=8, expected=58, actual=17, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1220: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1220: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1220: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1220] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1220: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1220 ns Started: 1220 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1230: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1230: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 13
+# ** Info: Valid Write Inputs Pass
+#    Time: 1230 ns Started: 1230 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1230 ns Started: 1230 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1250: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1250: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 13
+# ** Info: Valid Write Inputs Pass
+#    Time: 1250 ns Started: 1250 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1250 ns Started: 1250 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1260: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 138
+# UVM_INFO scoreboard.sv(102) @ 1260: uvm_test_top.env.scb [scoreboard] READ: addr=9, expected=17, actual=215, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1260: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1260: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1260: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1260] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1260: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1260 ns Started: 1260 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1270: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1270: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 15
+# ** Info: Valid Write Inputs Pass
+#    Time: 1270 ns Started: 1270 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1270 ns Started: 1270 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1290: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1290: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 15
+# ** Info: Valid Write Inputs Pass
+#    Time: 1290 ns Started: 1290 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1290 ns Started: 1290 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1300: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 179
+# UVM_INFO scoreboard.sv(102) @ 1300: uvm_test_top.env.scb [scoreboard] READ: addr=10, expected=215, actual=138, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1300: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1300: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1300: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1300] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1300: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1300 ns Started: 1300 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1310: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1310: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 14
+# ** Info: Valid Write Inputs Pass
+#    Time: 1310 ns Started: 1310 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1310 ns Started: 1310 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1330: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1330: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 14
+# ** Info: Valid Write Inputs Pass
+#    Time: 1330 ns Started: 1330 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1330 ns Started: 1330 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1340: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 138
+# UVM_INFO scoreboard.sv(102) @ 1340: uvm_test_top.env.scb [scoreboard] READ: addr=11, expected=138, actual=179, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1340: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1340: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1340: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1340] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1340: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1340 ns Started: 1340 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1350: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1350: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 10
+# ** Info: Valid Write Inputs Pass
+#    Time: 1350 ns Started: 1350 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1350 ns Started: 1350 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1370: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1370: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 10
+# ** Info: Valid Write Inputs Pass
+#    Time: 1370 ns Started: 1370 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1370 ns Started: 1370 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1380: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 53
+# UVM_INFO scoreboard.sv(102) @ 1380: uvm_test_top.env.scb [scoreboard] READ: addr=12, expected=179, actual=138, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1380: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1380: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1380: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1380] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1380: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1380 ns Started: 1380 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1390: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1390: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 11
+# ** Info: Valid Write Inputs Pass
+#    Time: 1390 ns Started: 1390 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1390 ns Started: 1390 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1410: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1410: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 11
+# ** Info: Valid Write Inputs Pass
+#    Time: 1410 ns Started: 1410 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1410 ns Started: 1410 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1420: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 0 | rdata = 140
+# UVM_INFO scoreboard.sv(102) @ 1420: uvm_test_top.env.scb [scoreboard] READ: addr=13, expected=138, actual=53, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1420: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1420: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1420: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1420] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1420: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1420 ns Started: 1420 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1430: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1430: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 9
+# ** Info: Valid Write Inputs Pass
+#    Time: 1430 ns Started: 1430 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1430 ns Started: 1430 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1450: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1450: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 9
+# ** Info: Valid Write Inputs Pass
+#    Time: 1450 ns Started: 1450 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1450 ns Started: 1450 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1460: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(102) @ 1460: uvm_test_top.env.scb [scoreboard] READ: addr=14, expected=53, actual=140, Memory contents: '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(108) @ 1460: uvm_test_top.env.scb [scoreboard] Read Data pass
+# UVM_INFO scoreboard.sv(129) @ 1460: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1460: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1460] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1460: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1460 ns Started: 1460 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1470: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1470: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 8
+# ** Info: Valid Write Inputs Pass
+#    Time: 1470 ns Started: 1470 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1470 ns Started: 1470 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1490: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1490: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 8
+# ** Info: Valid Write Inputs Pass
+#    Time: 1490 ns Started: 1490 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1490 ns Started: 1490 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1500: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(121) @ 1500: uvm_test_top.env.scb [scoreboard] Read Blocked: Fifo empty, Memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(129) @ 1500: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1500: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1500] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1500: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1500 ns Started: 1500 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1510: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1510: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 24
+# ** Info: Valid Write Inputs Pass
+#    Time: 1510 ns Started: 1510 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1510 ns Started: 1510 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1530: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1530: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 24
+# ** Info: Valid Write Inputs Pass
+#    Time: 1530 ns Started: 1530 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1530 ns Started: 1530 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1540: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(121) @ 1540: uvm_test_top.env.scb [scoreboard] Read Blocked: Fifo empty, Memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(129) @ 1540: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1540: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1540] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1540: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1540 ns Started: 1540 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1550: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1550: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 24
+# ** Info: Valid Write Inputs Pass
+#    Time: 1550 ns Started: 1550 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1550 ns Started: 1550 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1570: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1570: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 24
+# ** Info: Valid Write Inputs Pass
+#    Time: 1570 ns Started: 1570 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1570 ns Started: 1570 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1580: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(121) @ 1580: uvm_test_top.env.scb [scoreboard] Read Blocked: Fifo empty, Memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(129) @ 1580: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO sequence.sv(48) @ 1580: uvm_test_top.env.r_agnt.sqr@@read_seq [read_sequence] [1580] Read Transaction 0: rinc=1
+# UVM_INFO rd_driver.sv(18) @ 1580: uvm_test_top.env.r_agnt.r_drv [RD_DRV] rinc = 1
+# ** Info: Read Clock Toggling Pass
+#    Time: 1580 ns Started: 1580 ns  Scope: top.vif File: interface.sv Line: 50
+# UVM_INFO wr_monitor.sv(23) @ 1590: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1590: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 24
+# ** Info: Valid Write Inputs Pass
+#    Time: 1590 ns Started: 1590 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1590 ns Started: 1590 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO wr_monitor.sv(23) @ 1610: uvm_test_top.env.w_agnt.w_mon [WR_MON] winc = 0 | wfull = 0
+# UVM_INFO scoreboard.sv(76) @ 1610: uvm_test_top.env.scb [scoreboard] WFULL MATCH : Expected  = 0, Actual = 0, wbin = 16, wq2_rptr = 24
+# ** Info: Valid Write Inputs Pass
+#    Time: 1610 ns Started: 1610 ns  Scope: top.vif File: interface.sv Line: 83
+# ** Info: Write Clock Toggling Pass
+#    Time: 1610 ns Started: 1610 ns  Scope: top.vif File: interface.sv Line: 39
+# UVM_INFO rd_monitor.sv(24) @ 1620: uvm_test_top.env.r_agnt.r_mon [rd_monitor] rempty = 1 | rdata = 254
+# UVM_INFO scoreboard.sv(121) @ 1620: uvm_test_top.env.scb [scoreboard] Read Blocked: Fifo empty, Memory : '{140, 53, 138, 179, 138, 215, 17, 58, 112, 171, 56, 84, 216, 18, 116, 254}
+# UVM_INFO scoreboard.sv(129) @ 1620: uvm_test_top.env.scb [scoreboard] REMPTY Pass
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1620: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO coverage.sv(52) @ 1620: uvm_test_top.env.cov [COV] read coverage = 100.000000, write coverage = 100.000000
+# UVM_INFO scoreboard.sv(145) @ 1620: uvm_test_top.env.scb [scoreboard] ==============================================
+# UVM_INFO scoreboard.sv(146) @ 1620: uvm_test_top.env.scb [scoreboard]   Total Writes Operations =>    16
+# UVM_INFO scoreboard.sv(147) @ 1620: uvm_test_top.env.scb [scoreboard]   Total Read Operations =>     16
+# UVM_INFO scoreboard.sv(148) @ 1620: uvm_test_top.env.scb [scoreboard] ----------------------------------------------
+# UVM_INFO scoreboard.sv(149) @ 1620: uvm_test_top.env.scb [scoreboard]   RDATA   =>   Pass=16, Fail=0
+# UVM_INFO scoreboard.sv(150) @ 1620: uvm_test_top.env.scb [scoreboard]   WFULL   =>   Pass=80, Fail=0
+# UVM_INFO scoreboard.sv(151) @ 1620: uvm_test_top.env.scb [scoreboard]   REMPTY  =>   Pass=39, Fail=0
+# UVM_INFO scoreboard.sv(152) @ 1620: uvm_test_top.env.scb [scoreboard] ==============================================
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  447
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COV]     1
+# [Questa UVM]     2
+# [RD_DRV]    40
+# [RNTST]     1
+# [TEST_DONE]     1
+# [WR_MON]    80
+# [rd_monitor]    40
+# [read_sequence]    40
+# [scoreboard]   200
+# [wr_driver]    21
+# [write_sequence]    21
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1620 ns  Iteration: 62  Instance: /top
+# End time: 15:48:52 on Nov 08,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

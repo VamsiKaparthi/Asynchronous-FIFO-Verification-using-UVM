@@ -1,3 +1,9 @@
+`include "define.svh"
+`include "fifo.v"
+`include "package.sv"
+`include "interface.sv"
+import pkg::*;
+
 module top;
         `include "uvm_macros.svh"
         import uvm_pkg::*;

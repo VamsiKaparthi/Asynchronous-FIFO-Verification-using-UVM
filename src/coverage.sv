@@ -1,10 +1,13 @@
+`uvm_analysis_imp_decl(_read)
+`uvm_analysis_imp_decl(_write)
 class coverage extends uvm_component;
         `uvm_component_utils(coverage);
 
-        uvm_analysis_imp_read #(seq_item, coverage) rd_item_collect_cov;
-        uvm_analysis_imp_write #(seq_item, coverage) wr_item_collect_cov;
+        uvm_analysis_imp_read #(rd_seq_item, coverage) rd_item_collect_cov;
+        uvm_analysis_imp_write #(wr_seq_item, coverage) wr_item_collect_cov;
 
-        seq_item wr_pkt, rd_pkt;
+        wr_seq_item wr_pkt;
+				rd_seq_item rd_pkt;
 
 covergroup wr_cg;
                 //wrst_n_cp : coverpoint wr_pkt.wrst_n;
@@ -34,12 +37,12 @@ covergroup wr_cg;
                 wr_item_collect_cov = new("wicc", this);
         endfunction
 
-        function void write_write(seq_item pkt);
+        function void write_write(wr_seq_item pkt);
                 wr_pkt = pkt;
                 wr_cg.sample();
         endfunction
 
-        function void write_read(seq_item pkt);
+        function void write_read(rd_seq_item pkt);
                 rd_pkt = pkt;
                 rd_cg.sample();
         endfunction

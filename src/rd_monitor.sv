@@ -36,4 +36,4 @@ class rd_monitor extends uvm_monitor;
     end
   endtask
 endclass
-~
+
