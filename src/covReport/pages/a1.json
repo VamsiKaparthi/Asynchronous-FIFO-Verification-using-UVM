@@ -1,0 +1,22 @@
+var g_data = {
+a18:{
+scopes:[{s:'13',b:'0',val:'top'},{link:'z.htm?f=0&s=18',val:'vif'}]
+,assertions:[{dummy:0},{cr:'c',c:'g',z:'assert__p5',fc:'Gr',pc:'Gr',h0:'0',h1:'204',h2:'205',h3:'1',h4:'0',h5:'0',h6:'1'}
+,{cr:'c',c:'g',z:'assert__p4',fc:'Gr',pc:'Gr',h0:'0',h1:'1',h2:'205',h3:'204',h4:'0',h5:'0',h6:'1'}
+,{cr:'c',c:'g',z:'assert__p3',fc:'Gr',pc:'Gr',h0:'0',h1:'1',h2:'103',h3:'102',h4:'0',h5:'0',h6:'1'}
+,{cr:'c',c:'g',z:'assert__p2',fc:'Gr',pc:'Gr',h0:'0',h1:'204',h2:'205',h3:'0',h4:'0',h5:'1',h6:'2'}
+,{cr:'c',c:'g',z:'assert__p1',fc:'Gr',pc:'Gr',h0:'0',h1:'409',h2:'410',h3:'0',h4:'0',h5:'1',h6:'2'}
+],
+},
+a2:{
+scopes:[{link:'z.htm?f=0&s=2',val:'work.inf'}]
+,assertions:[{dummy:0},{cr:'c',c:'g',z:'assert__p5',fc:'Gr',pc:'Gr',h0:'0',h1:'204',h2:'205',h3:'1',h4:'0',h5:'0',h6:'1'}
+,{cr:'c',c:'g',z:'assert__p4',fc:'Gr',pc:'Gr',h0:'0',h1:'1',h2:'205',h3:'204',h4:'0',h5:'0',h6:'1'}
+,{cr:'c',c:'g',z:'assert__p3',fc:'Gr',pc:'Gr',h0:'0',h1:'1',h2:'103',h3:'102',h4:'0',h5:'0',h6:'1'}
+,{cr:'c',c:'g',z:'assert__p2',fc:'Gr',pc:'Gr',h0:'0',h1:'204',h2:'205',h3:'0',h4:'0',h5:'1',h6:'2'}
+,{cr:'c',c:'g',z:'assert__p1',fc:'Gr',pc:'Gr',h0:'0',h1:'409',h2:'410',h3:'0',h4:'0',h5:'1',h6:'2'}
+],
+},
+dummyEnd:0
+};
+processAssertionsData(g_data,1);

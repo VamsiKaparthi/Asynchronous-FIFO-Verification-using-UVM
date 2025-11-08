@@ -1,0 +1,7 @@
+var g_db_data = [
+{dummy:0},
+{name:'wr_cg',f:1,type:6,id:1257,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/pkg/coverage',parent:'1252'},
+{name:'rd_cg',f:1,type:6,id:1261,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],hdlPath:'/pkg/coverage',parent:'1252'},
+{name:'wr_cg',f:1,type:6,id:1595,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.pkg::coverage',parent:'1590'},
+{name:'rd_cg',f:1,type:6,id:1599,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],hdlPath:'work.pkg::coverage',parent:'1590'}];
+processConsCovergroupsData(g_db_data);

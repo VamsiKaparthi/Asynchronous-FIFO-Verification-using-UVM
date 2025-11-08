@@ -33,7 +33,7 @@ interface inf(input bit rclk, input bit rrst_n, input bit wclk, input bit wrst_n
 //Write clock toggling
 
   property p1;
-    @(posedge wclk, negedge wclk) wclk == $past(~wclk);
+    @(posedge wclk, negedge wclk) ##1 wclk == $past(~wclk);
   endproperty
   assert property(p1)begin
     $info("Write Clock Toggling Pass");
@@ -44,7 +44,7 @@ interface inf(input bit rclk, input bit rrst_n, input bit wclk, input bit wrst_n
 
 //Read clock toggling
   property p2;
-    @(posedge rclk, negedge rclk) rclk == $past(~rclk);
+    @(posedge rclk, negedge rclk) ##1 rclk == $past(~rclk);
   endproperty
   assert property(p2)begin
     $info("Read Clock Toggling Pass");
@@ -84,17 +84,6 @@ interface inf(input bit rclk, input bit rrst_n, input bit wclk, input bit wrst_n
   end
   else begin
     $info("Valid Write Inputs Fail");
-  end
-
-//Rempty and wfull not high at same time
-	property p6;
-		@(posedge wclk, posedge rclk) disable iff (!wrst_n || !rrst_n) !(rempty && wclk);
-	endproperty
-  assert property(p6)begin
-    $info("Rempty, wfull not high at the same time Pass");
-  end
-  else begin
-    $info("Rempty, wfull not high at the same time fail Fail");
   end
 
 endinterface

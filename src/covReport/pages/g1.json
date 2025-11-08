@@ -1,0 +1,26 @@
+var g_data = {
+g1252:[{dummy:0},
+{name:'wr_cg',f:1,type:1,id:1257,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],parent:'1252'},
+{name:'rd_cg',f:1,type:1,id:1261,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','auto(true)']],parent:'1252'}],
+c1257:{name:'wr_cg',type:1,pHash:'1252',pPath:'/pkg/coverage',totals:[6,6,'100.00%','G',0,0,'0.00%','R'],cvp:[{dummy:0},
+{name:'wdata_cp',f:1,type:4,id:1258,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1257'},
+{name:'winc_cp',f:1,type:4,id:1259,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1257'},
+{name:'wfull_cp',f:1,type:4,id:1260,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1257'}],crx:[{dummy:0}]},
+c1261:{name:'rd_cg',type:1,pHash:'1252',pPath:'/pkg/coverage',totals:[6,6,'100.00%','G',0,0,'0.00%','R'],cvp:[{dummy:0},
+{name:'rinc_cp',f:1,type:4,id:1262,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1261'},
+{name:'rempty_cp',f:1,type:4,id:1263,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1261'},
+{name:'rdata_cp',f:1,type:4,id:1264,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1261'}],crx:[{dummy:0}]},
+g1590:[{dummy:0},
+{name:'wr_cg',f:1,type:1,id:1595,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],parent:'1590'},
+{name:'rd_cg',f:1,type:1,id:1599,tb:'6',h:'6',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],opts:[[],['merge_instance','true']],parent:'1590'}],
+c1595:{name:'wr_cg',type:1,pHash:'1590',pPath:'work.pkg::coverage',totals:[6,6,'100.00%','G',0,0,'0.00%','R'],cvp:[{dummy:0},
+{name:'wdata_cp',f:1,type:4,id:1596,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1595'},
+{name:'winc_cp',f:1,type:4,id:1597,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1595'},
+{name:'wfull_cp',f:1,type:4,id:1598,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1595'}],crx:[{dummy:0}]},
+c1599:{name:'rd_cg',type:1,pHash:'1590',pPath:'work.pkg::coverage',totals:[6,6,'100.00%','G',0,0,'0.00%','R'],cvp:[{dummy:0},
+{name:'rinc_cp',f:1,type:4,id:1600,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1599'},
+{name:'rempty_cp',f:1,type:4,id:1601,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1599'},
+{name:'rdata_cp',f:1,type:4,id:1602,tb:'2',h:'2',m:'0',hp:'100.00%',cov:['100.00%','G'],g:'100.00%',gp:['100.00%','G'],hasb:1,parent:'1599'}],crx:[{dummy:0}]},
+dummyEnd:0
+};
+processCovergroupsData(g_data);
