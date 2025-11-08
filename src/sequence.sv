@@ -61,12 +61,12 @@ class p_read_sequence extends uvm_sequence;
   virtual task body();
     int count;
     rd_seq_item item;
-    /* item = rd_seq_item::type_id::create("read_item");
+    item = rd_seq_item::type_id::create("read_item");
     wait_for_grant();
     item.randomize() with {rinc == 0;};
                 send_request(item);
     wait_for_item_done();
-        */
+    
     repeat(N) begin
       item = rd_seq_item::type_id::create("read_item");
         wait_for_grant();
