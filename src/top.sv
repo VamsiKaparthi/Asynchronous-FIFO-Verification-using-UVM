@@ -34,6 +34,6 @@ module top;
                 uvm_config_db#(virtual inf)::set(null, "*", "vif", vif);
                 uvm_config_db#(event)::set(null, "*", "we", we);
                 uvm_config_db#(event)::set(null, "*", "re", re);
-                run_test("wfull_test");
+                run_test("reg_test");
         end
 endmodule
