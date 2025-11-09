@@ -181,7 +181,7 @@ class wfull_write_sequence extends uvm_sequence #(wr_seq_item);
   task body();
     int count;
     wr_seq_item item;
-    repeat (N) begin
+    repeat (DEPTH + 2) begin
       item = wr_seq_item::type_id::create("write_item");
       wait_for_grant();
       item.randomize() with {winc == 1;};
@@ -204,7 +204,7 @@ class wfull_read_sequence extends uvm_sequence #(rd_seq_item);
     int count;
     rd_seq_item item;
 
-    repeat(N) begin
+    repeat(DEPTH + 2) begin
       item = rd_seq_item::type_id::create("read_item");
       wait_for_grant();
       item.randomize() with {rinc == 0;};
